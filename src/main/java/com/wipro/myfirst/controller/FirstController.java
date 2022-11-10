@@ -14,6 +14,10 @@ import java.util.List;
 public class FirstController {
     @Autowired
     FirstService firstService;
+
+
+
+    
     @PostMapping("/cre")
     public void fCreate(@RequestBody FirstModel firstModel){
         firstService.create(firstModel);
